@@ -1,20 +1,30 @@
 {
-  "name": "notes-app",
-  "version": "0.1.0",
+  "name": "email-app",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "format": "prettier --write ."
   },
   "dependencies": {
-    "next": "12.1.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "cheerio": "^1.0.0-rc.10",
+    "date-fns": "^2.16.1",
+    "ioredis": "^4.19.4",
+    "marked": "^1.2.7",
+    "next": "12.1.1-canary.8",
+    "oauth": "^0.9.15",
+    "react": "18.0.0-rc.1",
+    "react-dom": "18.0.0-rc.1",
+    "sanitize-html": "^2.3.0"
   },
   "devDependencies": {
-    "eslint": "8.11.0",
-    "eslint-config-next": "12.1.0"
+    "prettier": "2.2.1"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "jsxBracketSameLine": false,
+    "arrowParens": "avoid"
   }
 }

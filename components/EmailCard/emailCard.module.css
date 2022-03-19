@@ -1,0 +1,14 @@
+.emailCard {
+  border: 2px solid #cfd2dc;
+  padding: 8px;
+  border-radius: 4px;
+  margin: 16px;
+  color: #636363;
+  background: #fff;
+  display: flex;
+}
+.avatar {
+  margin-right: 8px;
+}
+.content {
+}

@@ -1,6 +1,6 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
+module.exports = {
+  experimental: {
+    runtime: 'edge',
+    serverComponents: true,
+  },
 }
-
-module.exports = nextConfig
