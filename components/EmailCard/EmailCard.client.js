@@ -20,17 +20,27 @@ export default function EmailCard({ id, email, date }) {
       <div className={styles.avatar}>{initials}</div>
       <div className={styles.content}>
         <div>
-          From: <span>{from.name}</span>
+          From:{' '}
+          <span>
+            <strong>
+              {from.name} {`<${from.email}>`}
+            </strong>
+          </span>
         </div>
         <div>
-          Subject: <span>{subject}</span>
+          Subject:{' '}
+          <span>
+            <strong>{subject}</strong>
+          </span>
         </div>
         <p>{short_description}</p>
         <p>{date}</p>
         {isImportant ? (
           <span>Important</span>
         ) : (
-          <button onClick={markFavourite}>Mark as important</button>
+          <button className={styles.markFavouriteBtn} onClick={markFavourite}>
+            Mark as important
+          </button>
         )}
       </div>
     </div>

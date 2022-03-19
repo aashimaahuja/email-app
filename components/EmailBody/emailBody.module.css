@@ -1,4 +1,4 @@
-.emailCard {
+.emailContainer {
   border: 1px solid #cfd2dc;
   padding: 16px;
   border-radius: 5px;
@@ -6,7 +6,7 @@
   color: #636363;
   background: #ffffff;
   display: flex;
-  cursor: pointer;
+  width: 60%;
 }
 .avatar {
   margin-right: 10px;
@@ -20,9 +20,9 @@
   color: #fff;
 }
 
-.markFavouriteBtn {
-  background: pink;
-  border: 1px;
-  padding: 4px 8px;
-  border-radius: 10px;
+.emailBody > header {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 4px;
+  margin: 4px 0px 32px 8px;
 }
